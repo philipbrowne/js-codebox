@@ -4,7 +4,7 @@ const longest = (string) => {
   let current = 1;
   for (let i = 1; i < string.length; i++) {
     if (string[i] === string[i - 1]) {
-      current++; // increment current block length if the streak continues
+      current++;
     } else {
       if (current > max) max = current;
       current = 1;
